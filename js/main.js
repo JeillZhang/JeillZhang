@@ -136,4 +136,10 @@
         $mask.on('click', toggleToc);
         $('.navbar-main .catalogue').on('click', toggleToc);
     }
+
+    const navbarHeigh = $('.navbar.navbar-main').height();
+    const sectionMarginTop = parseInt($('.section').css('padding-top').replace('px|em|rem', ''));
+    const sectionMarginTopTartget = Math.abs(navbarHeigh - sectionMarginTop) + navbarHeigh;
+    $('.section').css('padding-top', sectionMarginTopTartget);
+    $('.is-sticky').css('top', navbarHeigh);
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
