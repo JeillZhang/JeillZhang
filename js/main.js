@@ -138,7 +138,6 @@
     }
 
     const winWidth = window.innerWidth;
-    console.log('winWidth: ' + winWidth);
     if (winWidth >= 768) {
         const navbarHeigh = $('.navbar.navbar-main').height();
         const sectionMarginTop = parseInt($('.section').css('padding-top').replace('px|em|rem', ''));
