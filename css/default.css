@@ -10985,6 +10985,10 @@ a.article-nav-next span {
 .navbar-logo img {
   max-height: 1.75rem;
 }
+.navbar-main.is-sticky {
+  top: 0rem;
+  z-index: 1000;
+}
 @media screen and (min-width: 1088px) {
   .navbar > .container .navbar-menu,
   .container > .navbar .navbar-menu {

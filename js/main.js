@@ -140,18 +140,6 @@
     const winWidth = window.innerWidth;
     if (winWidth > 768) {
         const navbarHeigh = $('.navbar.navbar-main').height();
-        const sectionMarginTop = parseInt($('.section').css('padding-top').replace('px|em|rem', ''));
-        const sectionMarginTopTartget = Math.abs(navbarHeigh - sectionMarginTop) + navbarHeigh;
-        $('.section').css('padding-top', sectionMarginTopTartget);
-        $('.is-sticky').css('top', navbarHeigh);
-
-        $('.navbar.navbar-main').css({
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            width: '100%',
-            'z-index': 1000
-        });
+        $('.column.is-sticky').css('top', navbarHeigh);
     }
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
